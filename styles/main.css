@@ -1,0 +1,29 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: orange;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nac ul li a {
+  text-decoration: none;
+}
+
+nav ul {
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=main.css.map */
