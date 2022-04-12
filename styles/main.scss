@@ -4,10 +4,14 @@
 @import './partials/colors';
 @import './partials/mixins';
 
+$primary-font: 'Dosis', sans-serif;
+$secodary-font: 'Marck Script', cursive;
+$title-font: 'Montserrat', sans-serif;
 
 body {
     color: $primary-color;
     background: $secondary-color;
+    font: $primary-font
   }
 
 
@@ -39,4 +43,13 @@ navbar.nav-left {
 
     .nav-tabs{
         @include .nav-tabs;
-       }
+    }
+    
+    .h1 {
+        @include h1;
+    }
+      
+    
+    title {
+        font: $title-font;   
+    }
