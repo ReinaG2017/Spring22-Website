@@ -5,16 +5,38 @@
 @import './partials/mixins';
 
 
+body {
+    color: $primary-color;
+    background: $secondary-color;
+  }
+
+
 nav {
-    background-color: navy
-    ul {margin-bottom: 50};
-    li {
-        display: inline block;
-        a {
-            text-decoration: none;
-            color:white;
-        }
-    }
-}
+    font:$primary-color;
+    background-color: $header-color;
+    text-decoration: none;
 }
 
+nav {
+    ul{
+        display: inline-block;
+    }
+}
+
+
+aside {
+    border: 1px solid orange;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px; }
+
+
+navbar.nav-left {
+    @include navbar();
+    }
+
+
+    .nav-tabs{
+        @include .nav-tabs;
+       }

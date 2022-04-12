@@ -1,0 +1,27 @@
+mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+  aside { 
+    border: 1px solid orange;
+    @include border-radius(7px); 
+    }
+
+
+    @mixin navbar() {
+        font:$primary-font
+    }
+
+    @mixin nav-tabs() {
+        background-color: $primary_btn_color;
+        color: white;
+        border-radius: 5px;
+        margin: 2px;
+        padding: 1em;
+        font-size: 1em;
+        &:hover {
+          background-color: darken($primary_btn_color,5%);
+          cursor: pointer;
+        }
